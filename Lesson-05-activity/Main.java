@@ -55,7 +55,7 @@ class Main {
 */
   int A1 = 50;
   double x1 = 24.0;
-  int y1 = (A1) / (1.0 + x1);
+  double y1 = (A1) / (1.0 + x1);
   System.out.println(y1);
 
 /*  
