@@ -85,7 +85,7 @@ class Main {
   int b = 50.0;
   int h = 24.0;
   int area = (0.5) * b * h;
-  System.out.println(area));
+  System.out.println(area);
 
 
 
