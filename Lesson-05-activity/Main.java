@@ -15,7 +15,7 @@ class Main {
 */
    int q1 = 6;
    int q2 = 8;
-   int sumq = x1 + x2;
+   int sumq = q1 + q2;
    System.out.println(sumq);
 
 
@@ -43,7 +43,7 @@ class Main {
     int z1 = 89;
     int z2 = 65;
     int z3 = 93;
-    int sumz = (z1 + z2 + z3) /3.0;
+    double sumz = (z1 + z2 + z3) / 3.0;
     System.out.println(sumz);
 
 
@@ -54,7 +54,7 @@ class Main {
 
 */
   int A1 = 50;
-  int x1 = 24.0;
+  double x1 = 24.0;
   int y1 = (A1) / (1.0 + x1);
   System.out.println(y1);
 
@@ -65,9 +65,9 @@ class Main {
     Declare and assign values to any new variables
 
 */
-  int A2 = 50.0;
-  int x2 = 24.0;
-  int y2 = ((2 * x2) * (x2 + 1) * ((-1 * x2) /2.0)) / A2;
+  double A2 = 50.0;
+  double x2 = 24.0;
+  double y2 = ((2 * x2) * (x2 + 1) * ((-1 * x2) /2.0)) / A2;
   System.out.println(y2);
 
 
@@ -82,9 +82,9 @@ class Main {
     Declare and assign values to any new variables
 */
 
-  int b = 50.0;
-  int h = 24.0;
-  int area = (0.5) * b * h;
+  double b = 50.0;
+  double h = 24.0;
+  double area = (0.5) * b * h;
   System.out.println(area);
 
 
