@@ -9,7 +9,7 @@ class Main {
   }
 
   double rad( double rad ){
-    return = (4/3) * 3.14 * Math.pow(rad, 3);
+    return (4/3) * 3.14 * Math.pow(rad, 3);
   }
 
   double radheight( double radi, double height ){
