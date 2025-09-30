@@ -25,7 +25,6 @@ class Main {
   }
 
   void init(){
-    print( FtoC );
     takeF( 5.0 );
     rad( 50.4 );
     radiheight( 25.6, 75.9 );
