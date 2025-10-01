@@ -25,10 +25,8 @@ class Main {
   }
 
   void init(){
-    takeF( 5.0 );
-    rad( 50.4 );
-    radiheight( 25.6, 75.9 );
-    x1x2y1y2( 6.6, 3.2, 6.2, 9.5 );
+    double q = takeF(50);
+    System.out.println(q);
   }
  
 }
