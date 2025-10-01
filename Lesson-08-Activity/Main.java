@@ -10,7 +10,7 @@ class Main {
   }
 
   double rad( double rad ){
-    double SphereVol = (4/3) * Math.PI * Math.pow(rad, 3);
+    double SphereVol = (4.0/3.0) * Math.PI * Math.pow(rad, 3);
 	return SphereVol;
   }
 
