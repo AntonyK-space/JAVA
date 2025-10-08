@@ -4,8 +4,10 @@ class Main {
   }
 
   void init(){
-
-        
+      double output = groupSavings(123);
+      System.out.println(output);
+      String output1 = groceryDiscount(123, 456);
+      System.out.println(output1);
   }
 
     /*
