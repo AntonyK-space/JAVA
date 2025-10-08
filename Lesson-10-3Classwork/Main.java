@@ -42,15 +42,15 @@ class Main {
         of beans: $25 savings
         Otherwise: $0 savings.
     */
-    String groceryDiscount(int totalspent, int canofbean){
+    int groceryDiscount(int totalspent, int canofbean){
       if(totalspent >= 100 || totalspent <= 200 && (canofbean >= 3)){
-        return "$10 Savings";
+        return (10);
     }
       else if(totalspent >= 200 && canofbean >= 4){
-        return "$25 Savings";
+        return (25);
       }
       else{
-        return "0$ Savings";
+        return (0);
       }
     }
 
