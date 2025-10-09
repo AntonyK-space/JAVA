@@ -23,7 +23,7 @@ class Main {
 	}
   }
 
-  boolean isGraduating(int gradelv, int credits){
+  String isGraduating(int gradelv, int credits){
 	if(gradelv == 12 && credits >= 44){
 		return "TRUE";
 	}
@@ -63,12 +63,12 @@ class Main {
 		}
 	}
 
-    boolean blueOrViolet(int lightfreq){
+    String blueOrViolet(int lightfreq){
 		if(lightfreq >= 600 && lightfreq <= 670){
-			return "Blue";
+			return "True";
 		}
 		else if(lightfreq >= 700 && lightfreq <= 750){
-			return "Purple";
+			return "True";
 		}
 		else{
 			return "False";
