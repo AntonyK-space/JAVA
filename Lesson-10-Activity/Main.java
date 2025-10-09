@@ -52,10 +52,10 @@ class Main {
 		if(weight <= 10.0){
 			return (0.00);
 		}
-		else if(weight >= 10.0 && BMI <= 15.0){
+		else if(weight >= 10.0 && weight <= 15.0){
 			return (5.00);
 		}
-		else if(weight >= 15.0 && BMI <= 25.0){
+		else if(weight >= 15.0 && weight <= 25.0){
 			return (10.0);
 		}
 		else{
