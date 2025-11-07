@@ -8,16 +8,16 @@ class Main {
   void printt(Object o){System.out.print(o);}
 
   void init(){
-      String x = rollDice(tw, t);
+      String x = rollDice();
       System.out.println(x);
 
     
   }
 
-  String rollDice(String d1, String d2){
+  String rollDice(){
     String bld ="";
     for(int x = 1; x <= 2; x++){
-      bld = (int)(Math.random() * 6) + 1;
+      bld += (int)(Math.random() * 6) + 1 ;
     }
     return bld;
   }
