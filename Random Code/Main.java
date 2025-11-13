@@ -17,6 +17,9 @@ class Main {
     if(msg.indexOf(c).equals(c)){
    	count++;
     }
+
+  
+
 }
 
 
