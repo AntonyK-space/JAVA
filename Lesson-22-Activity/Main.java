@@ -16,7 +16,8 @@ class Main {
     // Use these two arrays to test your quizGrader function
     char[] studentAns = {'A','A','B','C','D','C'};
     char[] ansKey = {'A','B','B','C','D','C'};
-
+    String score = quizGrader(studentAns, ansKey);
+    System.out.println(score);
   }
 
   //Problem 1:
@@ -50,16 +51,24 @@ class Main {
   //
   // Return the quiz grade by counting the number of correct answers divided by
   // the number of quistions.
-  int quizGrader(char[] b, char[] c){
+  String quizGrader(char[] b, char[] c){
     int right = 0;
     int wrong = 0;
-    char ans = "";
-    char key = "";
-    for(int i = 0; i < x.length; i++){
+    int total = 0;
+    char ans = '0';
+    char key = '0';
+    for(int i = 0; i < b.length; i++){
       ans = b[i];
-      key = c[i]
+      key = c[i];
+      total ++;
+      if(ans == key){
+        right ++;
+      }
+      else{
+        wrong ++;
+      }
     }
-    return sum;
+    return right + "/" + total;
   }
   
 
