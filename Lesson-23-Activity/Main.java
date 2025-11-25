@@ -34,12 +34,13 @@ class Main {
   String findNum(int[] x){
     int currentNum = 0;
     for(int i = 0; i < x.length; i++){
+      currentNum = x[i];
       if(currentNum == 20){
         return "Found";
       }
       else{}
-      return "Not Found";
     }
+    return "Not Found";
   }
 
 

@@ -18,6 +18,13 @@ class Main {
    	count++;
     }
 
+  int asciiNum(String stringname){
+  String stringName = "stringsentence";
+  for(int i = 0; i < stringName.length; i++)
+    char varibleName = stringName.charAt(i);
+    int ascii = varibleName ;
+    print(ascii);
+}
   
 
 }
