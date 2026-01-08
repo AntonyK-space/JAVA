@@ -4,7 +4,7 @@ class Dog{
     String dogname;
 
     Dog(String dogbreed, int dogage, String dogname){
-        
+        //Constructor
     }
 
     void bark(){
