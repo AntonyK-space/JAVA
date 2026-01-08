@@ -8,11 +8,11 @@ class Main {
   void printt(Object o){System.out.print(o);}
 
   void init(){
-    Car car1 = new Car("Ford", "2026 Ford F-150", 39330);
-    Car car2 = new Car("Toyota", "2026 Toyota RAV4", 31900);
+    Car car1 = new Car("Ford", "2026 Ford F-150", "Gray metal", 2026, 39330);
+    Car car2 = new Car("Toyota", "2026 Toyota RAV4", "White", 2026, 31900);
 
-    car1.carnoises();
-    car2.carnoises();
+    car1.honk();
+    car2.honk();
   }
 
 
