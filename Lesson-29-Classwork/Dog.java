@@ -5,6 +5,9 @@ class Dog{
 
     Dog(String dogbreed, int dogage, String dogname){
         //Constructor
+        this.dogbreed = dogbreed;
+        this.dogage = dogage;
+        this.dogname = dogname;
     }
 
     void bark(){
