@@ -62,6 +62,14 @@ class Student{
     return result;
   }
 
+  boolean checkCourse( String course){
+    for(int x = 0; x < this.classCourses.length; x++){
+      if(this.classCourses[x].equals(course)){
+        return true;
+      }
+    }
+    return false;
+  }
 
 
 

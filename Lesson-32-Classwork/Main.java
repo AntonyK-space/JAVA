@@ -21,6 +21,7 @@ class Main {
    
     System.out.println(s1.ifClassOrNoClass());
     System.out.println(s2.ifClassOrNoClass());
+    System.out.println(s1.checkCourse("FSFC3"));
   }
 
 
