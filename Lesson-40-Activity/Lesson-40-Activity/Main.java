@@ -21,11 +21,12 @@ class Main {
     String queryResult="";
     String sql ="";
 
-   
-
+    Database writingSQL = new Database("jdbc:sqlite:");
     
-
-
+   String sql = " Select * From students" +
+                " Where teacher1 = 'BANU';" ;
+    queryResult = db.runSQL(sql, "table-auto");
+    System.out.println(queryResult);
     
      
   }    
