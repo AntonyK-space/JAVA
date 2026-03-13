@@ -26,7 +26,7 @@ class Main {
    String sql = " Select * From students" +
                 " Where teacher1 = 'BANU';" ;
     queryResult = db.runSQL(sql, "table-auto");
-    System.out.println(queryResult);
+    print(queryResult);
     
      
   }    
