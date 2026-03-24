@@ -40,11 +40,23 @@ class Main {
     
     //3
     //For the first 20 invoices get the customer id, invoice id, track name, unit price and quantity .(Hint: information is in three tables) 
-
+    sql = "Select CustomerID, InvoiceID, Name, UnitPrice, Quantity From invoice_items"
+    sql += "Inner Join invoices"
+    sql += "On invoice_items.InvoiceID = invoices.InvoicesID"
+    sql += "On customers.CustomerID = invoices.CustomerID"
+    sql += "Limit 20;"
+    result = db.runSQL(sql, "table-auto");
+    print(result);
 
     //4
     //What is the list of customers' names whose merchandise is being shipped either to the USA, Germany or Poland? (Hint: use billingcountry and remove duplicates)
-
+    sql = "Select CustomerID, InvoiceID, Name, UnitPrice, Quantity From invoice_items"
+    sql += "Inner Join invoices"
+    sql += "On invoice_items.InvoiceID = invoices.InvoicesID"
+    sql += "On customers.CustomerID = invoices.CustomerID"
+    sql += "Limit 20;"
+    result = db.runSQL(sql, "table-auto");
+    print(result);
     
     //5
 
