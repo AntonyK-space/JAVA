@@ -10,7 +10,8 @@ async function init(){
   let output = ""
   let build ="";
 
-   
+  <div id='output'>
+  </div>
 
   
 
