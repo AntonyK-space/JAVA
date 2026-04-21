@@ -37,10 +37,11 @@ class Main {
     Database db = new Database("jdbc:sqlite:chinook.db");
     
    // Add your  code here
-    
+    String sql = "Select * From tracks" ;
+
+
     server.createContext("/", new RouteHandler("You are connected, but route not given or incorrect....") );
-    server.createContext("/website", new RouteHandler("") );
-  
+    server.createContext("/songs", new RouteHandler(db, sql) );
     //Start the server
     server.start();
 
