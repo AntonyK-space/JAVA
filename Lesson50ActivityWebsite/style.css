@@ -74,8 +74,11 @@ nav a:hover{
 }
 #output{
   background-color: gainsboro;
-  flex:1;
   flex-wrap:wrap;
+}
+
+.card{
+  flex:1;
 }
 
 .center{

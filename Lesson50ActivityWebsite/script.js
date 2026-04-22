@@ -1,36 +1,25 @@
 let data;
+function init(){
+	$.ajaxSetup({async: false});
 
-async function init(){
-	link = ("https://friendly-waddle-4jv75qgjg5p7hj5g7-8500.app.github.dev/songs");
-	info = await fetch(link);
-	data = await info.json();
+	let link = "https://friendly-waddle-4jv75qgjg5p7hj5g7-8500.app.github.dev";
+	let route = "/songs"
+	songs = $.getJSON(link+route).responseJSON;
+
+	generateCards(songs)
 }
 
-function filter(){
-	let year = parseInt(document.getElementById("year").value);
+function generateCards(songs){
 	let output = document.getElementById("output");
-	let build = "";
-	for (let i = 0; i < data.length; i++){
-		let info = data[i];
-		if(info.year == year){
-			build +=`<div class="row">`;
-			build +=`<div class="column">`;
-			build +=`<div class="flip-card">`;
-			build +=`<div class="flip-card-inner">`;
-			build +=`<div class="flip-card-front">`
-			build +=`<h1>Song Name: ${info.Name}</h1>`
-			build +=`</div>`;
-			build +=`<div class="flip-card-back">`;
-			build +=`<h2>Composer: ${info.Composer}</h2>`;
-			build +=`<h3>Unit Price: ${info.UnitPrice}</h3>`;
-			build +=`</div>`;
-			build +=`</div>`;
-			build +=`</div>`;
-			build +=`</div>`;
-			build +=`</div>`;
-		}
+	let bld = "";
+	for(let x = 0; x < songs.length; x++){
+		let song = songs[x];
+		bld +=`<h1>Song Name: ${song.Name}</h1>`;
+		bld +=`<h2>Composer: ${song.Composer}</h2>`;
+		bld +=`<h3>Unit Price: ${song.UnitPrice}</h3>`;
+		bld +='<hr>'
 	}
-	output.innerHTML= build;
+	output.innerHTML = bld;
 }
 
 
