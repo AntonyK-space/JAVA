@@ -14,10 +14,11 @@ function generateCards(songs){
 	let bld = "";
 	for(let x = 0; x < songs.length; x++){
 		let song = songs[x];
+		bld +='<div id ="output" class="card">';
 		bld +=`<h1>Song Name: ${song.Name}</h1>`;
 		bld +=`<h2>Composer: ${song.Composer}</h2>`;
 		bld +=`<h3>Unit Price: ${song.UnitPrice}</h3>`;
-		bld +='<hr>'
+		bld +='</div>'
 	}
 	output.innerHTML = bld;
 }

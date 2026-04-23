@@ -75,10 +75,21 @@ nav a:hover{
 #output{
   background-color: gainsboro;
   flex-wrap:wrap;
+  display:flex;
 }
 
 .card{
+  padding: 10px;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  background-color: rgb(165, 178, 207);
+  color:black;
+  padding:10px;
   flex:1;
+  margin:15px;
+  text-align:center;
+  font-size:15px;
 }
 
 .center{
