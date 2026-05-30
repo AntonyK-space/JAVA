@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- We need to import JQUERY Library to make the api call-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+   </head>
+  <body id="body" onload="">
+    <div id="banner" class="container center">
+      <h1> Project Website </h1>
+    </div>
+    <div class="container subbanner">
+      <div>
+        <p> Here is a list of games in the database.
+        </p>
+      </div>
+    </div>
+
+  <nav style="color:black;" class="flex-container">
+    <a href="index.html">Homepage</a>
+    <a href="game.html" >Game Info</a>
+    <a href="ratings.html" >Game Ratings</a>
+  </nav>
+
+  <div>
+    <input type="text" id="type" placeholder="Enter Game Genre">
+    <input type="button" value="Filter By Game Genre" onclick="init0(games)">
+  </div>
+
+  <!-- Create a container to display results -->
+  <div>
+    <div></div>
+    <div id='output' class="container"></div>
+    <div></div>
+  </div>
+      
+  </body>
+</html>
